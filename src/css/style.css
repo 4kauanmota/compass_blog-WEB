@@ -1,0 +1,35 @@
+:root{
+  --primary: #32325d;
+  --title: #344f91;
+  --white: #fff;
+  --gray: #575757;
+}
+
+body{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+#blog-header{
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  padding: 15px 79px 15px 79px;
+}
+
+#blog-header > *{
+  vertical-align: middle;
+}
+
+#blog-header img.blog-logo{
+  margin: 0 0.15rem 0 0;
+}
+
+#blog-header a.blog-title{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29.05px;
+}
