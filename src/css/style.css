@@ -5,10 +5,43 @@
   --gray: #575757;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
+}
+
+body, h2, p{
+  margin: 0;
+}
+
+#blog-header{
+  position: sticky;
+  top: 0;
+
+  background-color: var(--primary);
+  padding: 15px 79px 15px 79px;
+}
+
+#blog-header > *{
+  vertical-align: middle;
+}
+
+#blog-header > img.blog-logo{
+  margin: 0 0.15rem 0 0;
+}
+
+#blog-header > a.blog-title{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29.05px;
 }
 
 main#container{
@@ -24,7 +57,7 @@ main#container{
   line-height: 20px;
   font-weight: 600;
 
-  margin: 5rem 0 2.5rem 0;
+  margin: 5rem 0 2.8rem 0;
 }
 
 .title-underline{
@@ -36,30 +69,85 @@ main#container{
   border-radius: 0 4rem 4rem 0;
 }
 
-#blog-header{
-  position: sticky;
-  top: 0;
-  background-color: var(--primary);
-  padding: 15px 79px 15px 79px;
-}
-
-#blog-header > *{
-  vertical-align: middle;
-}
-
-#blog-header img.blog-logo{
-  margin: 0 0.15rem 0 0;
-}
-
-#blog-header a.blog-title{
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 29.05px;
-}
-
 #posts-container{
   width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 60vh;
+  grid-gap: 4rem;
+}
+
+.post{
+  width: 100%;
+  height: 100%;
+  padding: 0 0 2rem 0;
+  display: inline-block;
+
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.post:hover{
+  transform: translateY(-5px);
+}
+
+.post > header{
+  width: 100%;
+  height: 65%;
+}
+
+.post > header > img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.post > div{
+  height: 30%;
+
+  margin: 0 2rem;
+}
+
+.post > div > h2{
+  height: 35%;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--title);
+}
+
+.post > div > p{
+  height: 65%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: var(--gray);
+}
+
+.post footer{
+  height: 5%;
+  padding: 1rem 1rem 0 0;
+
+  text-align: end;
+}
+
+.post > footer > a.expand-post{
+  font-weight: 700;
+  color: var(--title);
+  text-decoration: none;
+}
+
+.post > footer > a.expand-post:hover{
+  text-decoration: underline;
+}
+
+footer{
+  margin: 0 0 1rem 0;
 }
