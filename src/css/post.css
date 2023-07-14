@@ -1,0 +1,72 @@
+:root {
+  --primary: #32325d;
+  --title: #344f91;
+  --white: #fff;
+  --gray: #575757;
+}
+
+* {
+  box-sizing: border-box;
+
+  scrollbar-color: rgba(58, 79, 154, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(58, 79, 154, 0.3);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(58, 79, 154, 0.4);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+body, h2, p {
+  margin: 0;
+}
+
+#blog-header {
+  position: sticky;
+  top: 0;
+
+  background-color: var(--primary);
+  padding: 15px 79px 15px 79px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  z-index: 1;
+}
+
+#blog-header > * {
+  vertical-align: middle;
+}
+
+#blog-header > img.blog-logo {
+  margin: 0 0.15rem 0 0;
+}
+
+#blog-header > a.blog-title {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29.05px;
+}
+
+main#container {
+  width: 55%;
+  margin: 0 auto;
+}
