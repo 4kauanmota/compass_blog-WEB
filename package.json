@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/4kauanmota/compass_blog/issues"
   },
-  "homepage": "https://github.com/4kauanmota/compass_blog#readme"
+  "homepage": "https://github.com/4kauanmota/compass_blog#readme",
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
