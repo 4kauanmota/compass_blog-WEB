@@ -1,25 +1,44 @@
-:root{
+:root {
   --primary: #32325d;
   --title: #344f91;
   --white: #fff;
   --gray: #575757;
 }
 
-*{
+* {
   box-sizing: border-box;
+
+  scrollbar-color: rgba(58, 79, 154, 0.3) transparent;
 }
 
-body{
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(58, 79, 154, 0.3);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(58, 79, 154, 0.4);
+}
+
+body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 
-body, h2, p{
+body, h2, p {
   margin: 0;
 }
 
-#blog-header{
+#blog-header {
   position: sticky;
   top: 0;
 
@@ -30,15 +49,15 @@ body, h2, p{
   z-index: 1;
 }
 
-#blog-header > *{
+#blog-header > * {
   vertical-align: middle;
 }
 
-#blog-header > img.blog-logo{
+#blog-header > img.blog-logo {
   margin: 0 0.15rem 0 0;
 }
 
-#blog-header > a.blog-title{
+#blog-header > a.blog-title {
   color: var(--white);
   text-decoration: none;
   font-weight: 600;
@@ -47,12 +66,12 @@ body, h2, p{
   line-height: 29.05px;
 }
 
-main#container{
+main#container {
   width: 90%;
   margin: 0 auto;
 }
 
-.title{
+.title {
   display: inline-block;
 
   color: var(--title);
@@ -63,7 +82,7 @@ main#container{
   margin: 5rem 0 2.8rem 0;
 }
 
-.title-underline{
+.title-underline {
   display: inline-block;
   width: 100%;
   height: 3px;
@@ -72,7 +91,7 @@ main#container{
   border-radius: 0 4rem 4rem 0;
 }
 
-#posts-container{
+#posts-container {
   width: 100%;
 
   display: grid;
@@ -81,7 +100,7 @@ main#container{
   grid-gap: 4rem;
 }
 
-.post{
+.post {
   width: 100%;
   height: 100%;
   padding: 0 0 2rem 0;
@@ -94,29 +113,29 @@ main#container{
   transition: 0.4s ease;
 }
 
-.post:hover{
+.post:hover {
   transform: translateY(-5px);
 }
 
-.post > header{
+.post > header {
   width: 100%;
   height: 65%;
 }
 
-.post > header > img{
+.post > header > img {
   width: 100%;
   height: 100%;
 
   object-fit: cover;
 }
 
-.post > div{
+.post > div {
   height: 30%;
 
   margin: 0 2rem;
 }
 
-.post > div > h2{
+.post > div > h2 {
   height: 35%;
 
   display: flex;
@@ -125,7 +144,7 @@ main#container{
   color: var(--title);
 }
 
-.post > div > p{
+.post > div > p {
   height: 65%;
 
   overflow: hidden;
@@ -134,23 +153,23 @@ main#container{
   color: var(--gray);
 }
 
-.post footer{
+.post footer {
   height: 5%;
   padding: 1rem 1rem 0 0;
 
   text-align: end;
 }
 
-.post > footer > a.expand-post{
+.post > footer > a.expand-post {
   font-weight: 700;
   color: var(--title);
   text-decoration: none;
 }
 
-.post > footer > a.expand-post:hover{
+.post > footer > a.expand-post:hover {
   text-decoration: underline;
 }
 
-footer{
+footer {
   margin: 0 0 1rem 0;
 }
