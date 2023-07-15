@@ -109,7 +109,6 @@ aside.back-to-home > a > img{
 }
 
 aside.back-to-home:hover > a > img{
-  transform: translateY(-2px);
   opacity: 1;
 }
 
