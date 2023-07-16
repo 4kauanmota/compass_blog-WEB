@@ -1,0 +1,27 @@
+#blog-header {
+  position: sticky;
+  top: 0;
+
+  background-color: var(--primary);
+  padding: 15px 79px 15px 79px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  z-index: 1;
+}
+
+#blog-header > * {
+  vertical-align: middle;
+}
+
+#blog-header > img.blog-logo {
+  margin: 0 0.15rem 0 0;
+}
+
+#blog-header > a.blog-title {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29.05px;
+}
