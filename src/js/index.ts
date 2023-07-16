@@ -1,5 +1,5 @@
-import { PostComponent } from "./component/PostComponent.js";
-import { Post } from "./model/Post.js";
+import { PostComponent } from "./component/PostComponent";
+import { Post } from "./model/Post";
 
 const API: string = "https://64b220dd38e74e386d54b34f.mockapi.io/posts"
 

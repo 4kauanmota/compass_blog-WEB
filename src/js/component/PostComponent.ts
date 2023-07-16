@@ -1,5 +1,5 @@
-import { BaseComponent } from "./BaseComponent.js";
-import { Post } from "../model/Post.js";
+import { BaseComponent } from "./BaseComponent";
+import { Post } from "../model/Post";
 
 export class PostComponent extends BaseComponent<HTMLElement, HTMLElement> {
   private post: Post;

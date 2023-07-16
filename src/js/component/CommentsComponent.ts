@@ -1,5 +1,5 @@
-import { BaseComponent } from "./BaseComponent.js";
-import { Comment } from "../model/Comment.js";
+import { BaseComponent } from "./BaseComponent";
+import { Comment } from "../model/Comment";
 
 export class CommentComponent extends BaseComponent<HTMLElement, HTMLElement> {
   private comment: Comment;
