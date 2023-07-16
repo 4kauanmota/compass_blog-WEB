@@ -11,11 +11,10 @@ export class PostComponent extends BaseComponent<HTMLElement, HTMLElement> {
     this.RenderContent();
   }
 
-  get Post(): Post { return this.post }
-
   RenderContent(): void {
     this.Element.setAttribute('onclick', 'window.location.href=' + `"/post.html?id=${this.post.id}"`, )
     this.Element.querySelector('img')!.setAttribute('src', this.post.imgUrl);
+    this.Element.querySelector('img')!.setAttribute('alt', `An image that represents ${this.post.title}`);
     this.Element.querySelector('div > h2')!.textContent = this.post.title;
     this.Element.querySelector('div > p')!.textContent = this.post.body;
     this.Element.querySelector('footer > a')!.setAttribute('href', `/post.html?id=${this.post.id}`)

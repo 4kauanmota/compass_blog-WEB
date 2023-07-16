@@ -3,8 +3,8 @@ import { Post } from "./model/Post.js";
 
 const API: string = "https://64b220dd38e74e386d54b34f.mockapi.io/posts"
 
-const getPosts = () => {
-  return fetch(API)
+const getPosts = async () => {
+  return await fetch(API)
   .then(data => data.json())
   .catch(error => console.log(error))
 } 

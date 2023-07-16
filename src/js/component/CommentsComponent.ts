@@ -11,10 +11,9 @@ export class CommentComponent extends BaseComponent<HTMLElement, HTMLElement> {
     this.RenderContent();
   }
 
-  get Comment(): Comment { return this.comment }
-
   RenderContent(): void {
-    this.Element.querySelector('p.user')!.textContent = this.comment.username + ": " + this.comment.email + ": ";
+    this.Element.querySelector('p.user .username')!.textContent = this.comment.username + ": ";
+    this.Element.querySelector('p.user .email')!.textContent = this.comment.email + ": ";
     this.Element.querySelector('p.text')!.textContent = this.comment.body;
   }
 }

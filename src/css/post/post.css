@@ -144,6 +144,9 @@
   
   blockquote.comment .user {
     display: inline-block;
+  }
+
+  blockquote.comment .user > * {
     font-weight: 600;
     color: var(--title);
   }
