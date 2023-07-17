@@ -7,12 +7,14 @@
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-  
+  html {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 13px;
+  }
+
+  body {
+    margin: 0;
   }
   
   body, h2, p {
@@ -20,11 +22,11 @@
   }
   
   h1 {
-    font-size: 36px;
+    font-size: 3rem;
   }
   
   h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 }
 
@@ -35,6 +37,7 @@
 @layer main {
   main#container {
     width: 90%;
+    max-width: 1920px;
     margin: 0 auto;
   }
   
@@ -142,5 +145,43 @@
 @layer footer {
   footer {
     margin: 0 0 1rem 0;
+  }
+}
+
+@layer responsiveness {
+  @media(max-width: 1280px) {
+    html {
+      font-size: 10.5px;
+    }
+
+    .post > div > h2 {
+      height: 45%;
+      font-size: 1.6rem;
+    }
+    
+    .post > div > p {
+      height: 55%;
+    }
+  }
+
+  @media(max-width: 960px) {
+    #posts-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media(max-width: 600px) {
+    #posts-container {
+      grid-template-columns: 1fr;
+    }
+
+    .post > div > h2 {
+      height: 60%;
+      font-size: 2rem;
+    }
+    
+    .post > div > p {
+      height: 40%;
+    }
   }
 }

@@ -7,20 +7,22 @@
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-  
+  html {
     font-family: 'Inter', sans-serif;
     font-weight: 200;
     font-size: 16px;
   }
-  
-  body, h2, p {
+
+  body {
     margin: 0;
   }
   
-  h2 {
-    font-size: 20px;
+  body, h1, p {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
   }
 }
 
@@ -73,6 +75,7 @@
 @layer main {
   main#container {
     width: 55%;
+    max-width: 1360px;
     margin: 0 auto;
   }
 }
@@ -106,7 +109,7 @@
     overflow: hidden;
   }
   
-  .post > div > h2 {
+  .post > div > h1 {
     font-weight: 500;
   
     height: 35%;
@@ -121,7 +124,7 @@
     height: 65%;
     overflow: auto;
   
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--gray);
   }
@@ -155,5 +158,25 @@
     display: inline;
     font-weight: 200;
     color: var(--gray);
+  }
+}
+
+@layer responsiveness {
+  @media(max-width: 1280px) {
+    html {
+      font-size: 10.5px;
+    }
+  }
+
+  @media(max-width: 960px) {
+    main#container {
+      width: 70%;
+    }
+  }
+
+  @media(max-width: 600px) {
+    main#container {
+      width: 90%;
+    }
   }
 }
