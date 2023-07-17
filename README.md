@@ -52,7 +52,7 @@ If all goes well, you will see this message in your terminal, the url above is f
 
 # 👀 **Preview**
 ### Computer
-![Preview Computer](https://i.postimg.cc/J4q6fYN9/Computer.gif)
+![Preview Computer](https://i.postimg.cc/Pxg026GP/Computer.gif)
 
 ### Mobile
-![Preview Mobile](https://i.postimg.cc/02Fn1g6X/Mobile.gif)
+![Preview Mobile](https://i.postimg.cc/NFGCNZJG/Mobile.gif)
