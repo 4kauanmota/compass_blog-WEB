@@ -149,21 +149,6 @@
 }
 
 @layer responsiveness {
-  @media(max-width: 1280px) {
-    html {
-      font-size: 10.5px;
-    }
-
-    .post > div > h2 {
-      height: 45%;
-      font-size: 1.6rem;
-    }
-    
-    .post > div > p {
-      height: 55%;
-    }
-  }
-
   @media(max-width: 960px) {
     #posts-container {
       grid-template-columns: repeat(2, 1fr);
@@ -173,15 +158,6 @@
   @media(max-width: 600px) {
     #posts-container {
       grid-template-columns: 1fr;
-    }
-
-    .post > div > h2 {
-      height: 60%;
-      font-size: 2rem;
-    }
-    
-    .post > div > p {
-      height: 40%;
     }
   }
 }
