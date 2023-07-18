@@ -102,15 +102,11 @@
   
   .post > div {
     height: 30%;
-  
     padding: 0 2rem;
-  
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   
   .post > div > h2 {
-    height: 35%;
+    height: 40%;
   
     display: flex;
     align-items: center;
@@ -119,14 +115,18 @@
   }
   
   .post > div > p {
-    height: 65%;
+    height: 60%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
   
     color: var(--gray);
   }
   
   .post footer {
     height: 5%;
-    padding: 1rem 1rem 0 0;
+    padding: 1rem 2rem 0 0;
   
     text-align: end;
   }
@@ -143,7 +143,7 @@
 }
 
 @layer footer {
-  footer {
+  footer:last-of-type {
     margin: 0 0 1rem 0;
   }
 }
