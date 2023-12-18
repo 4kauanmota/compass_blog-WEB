@@ -8,15 +8,7 @@ module.exports = {
     index: './src/js/index.ts',
     post: './src/js/post/post.ts'
   },
-
-  devServer: {
-    static: [
-      {
-        directory: path.join(__dirname),
-      },
-    ],
-  },
-
+  
   output: {
     filename: `[name].bundle.js`,
     path: path.resolve(__dirname, 'dist/js'),
