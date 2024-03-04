@@ -1,4 +1,4 @@
-![Project Stars](https://img.shields.io/github/stars/4kauanmota/compass_blog?color=1e90ff) ![Project Commits Week](https://img.shields.io/github/commit-activity/w/4kauanmota/compass_blog?color=1e90ff)
+![Project Stars](https://img.shields.io/github/stars/4kauanmota/compass_blog-WEB?color=1e90ff) ![Project Commits Week](https://img.shields.io/github/commit-activity/w/4kauanmota/compass_blog-WEB?color=1e90ff)
 
 
 # 📄 **Informations**
@@ -34,12 +34,12 @@
 + [NODE.JS](https://nodejs.org/en)
 
 ### Codes
-+ `git clone https://github.com/4kauanmota/compass_blog.git .`
++ `git clone https://github.com/4kauanmota/compass_blog-WEB.git .`
 + `npm install`
 + `npm run build`
 + `npm run start`
 
-First you will need to open the terminal in the folder where you want to clone this project, and then, you paste this code `git clone https://github.com/4kauanmota/compass_blog.git .`
+First you will need to open the terminal in the folder where you want to clone this project, and then, you paste this code `git clone https://github.com/4kauanmota/compass_blog-WEB.git .`
 
 In next you will use `npm install` to install project dependencies, then `npm run build` to build the project, and finally `npm run start` to start the project locally on your machine.
 
